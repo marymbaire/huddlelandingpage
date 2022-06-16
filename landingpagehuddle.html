@@ -1,64 +1,297 @@
 <!DOCTYPE html>
+<html>
 <html lang="en">
     <meta charset="utf-8">
-<header>
+<head>
 <title> huddlelandingpage</title>
-</header>
-
+<header>
 <style>
-    .backgroundhead{
-        position: relative;
-        top: 0px;
-        left:0px;
-        z-index: 1;
-    }
     .logo{
         position: absolute;
-        top : 10px;
-        left: 10px;
         z-index: 2;
+        left:30px;
+        top: 50px;
     }
-
-</style>
-<style>
-    img {
+    
+    /* For width smaller than 375px: */
+    header {
+        
+        background-color: azure;
+      background-repeat: no-repeat;
+      background-image: url('huddlelanding page/bg-hero-mobile.svg'); 
+      height: 450px;
+      max-width: 100%;
+      z-index: 1 ;
+    }
+    
+    /* For width 375px and larger: */
+    @media only screen and (min-width: 375px) {
+      header { 
+        background-color: azure;
+         background-image: url('huddlelanding page/bg-hero-desktop.svg'); 
+         height: 450px;
+         max-width:100%;
+         z-index: 1 ;
+      }
+    }
+    .inheader{
+        position: absolute;
+        top: 130px;
+        left: 30px;
+        color: black;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+    .inheader2{
+        position: absolute;
+        top: 250px;
+        left: 30px;
+        color: black;
+        font-size:medium;
+    }
+    .textbox1 {
+  position: absolute;
+  left: 30px;
+  top: 340px;
+  background-color: palevioletred;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  width: 250px;
+  text-align: center;
+}
+.textbox2{
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    width: 150px;
+    text-align: center;
+    background-color: white;
+}
+    .illustrationmodel{
+        right: 40px;
+        top: 130px;
         width: auto;
-        height: auto;  
+        height: auto;
+        z-index: 2;
+        position: absolute;
     }
-    @media screen and (min-width: 375px) and (max-width: 1440px){
-        .pc-image
+    
+    </style>
+
+    </header>
+    </head>
+    <body>
+        <style>
+            .image1{
+                position: absolute;
+                right: 80px;
+                top: 600px;
+            }
+            .textintext1{
+                top: 650px;
+                position:absolute;
+                left:100px;
+            }
+            .textintext11{
+                color: grey;
+            }
+            .text1{
+                padding-left: 20px;
+                  padding-right: 20px;
+                  border-style:hidden;
+            }
+            .text2{
+                padding-left: 20px;
+                  padding-right: 20px;
+                  border-style:hidden;
+            }
+            .image2{
+                position: absolute;
+                left: 100px;
+                top: 900px;
+            }
+            .textintext2{
+                top: 950px;
+                position:absolute;
+                right: 80px;
+            }
+            .image3{
+                position: absolute;
+                right: 80px;
+                top: 1200px;
+            }
+            .textintext3{
+                top: 1250px;
+                position:absolute;
+                left:100px;
+            }
+            .text3{
+                padding-left: 20px;
+                  padding-right: 20px;
+                  border-style:hidden;
+            }
+            .textbox3 {
+            position: absolute;
+            left: 35%;
+            top: 1550px;
+            background-color: gray;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+            height: 120px;
+            font-weight: bold;
+            font-size: large;
+            z-index: 2;
+            }
+            .textbox4 {
+            position: absolute;
+            left: 40%;
+            top: 1600px;
+            background-color: palevioletred;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 25px;
+            width: 250px;
+            text-align: center;
+            z-index: 2;
+            }
+            .textbox5 {
+            position: absolute;
+            left: 0%;
+            top: 1600px;
+            background-color: darkblue;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 10px;
+            width: 100%;
+            text-align: center;
+            height: 300px;
+            z-index: 1;
+            }
+            .logo1{
+            position: absolute;
+            z-index: 2;
+            left:80px;
+            top: 1700px;
     }
-    @media screen and (min-width: 100px) and (max-width: 375px) {
-        .mobile-image
-    }
-</style>
-<body>
-<div class="backgroundhead">
-    <div class= "pc-image">
-    <img src="huddlelanding page/bg-hero-desktop.svg" style="background: azure;">
+        </style>
+
+    <div class="logo">
+        <img src="huddlelanding page/logo.svg" >
+    </div>  
+
+    <div class="inheader">
+        <p>Build The Community 
+        <br>
+        Your Fans Will Love
+        </p>
     </div>
-    <div class="mobile-image ">
-        <img src="huddlelanding page/bg-hero-mobile.svg" style=" background: azure">  
+
+    <div class="inheader2">
+        <p>
+        Huddle re-imagines the way we build communities. You have
+        <br>
+        a voice, but so does your audience. Create connections with
+        <br>
+        your users as you engage in genuine discussion.
+        </p>
     </div>
-</div>
-<div class="logo"> 
-    <img src="huddlelanding page/logo.svg">
-</div>
+    <div class="textbox1">
+        <p>Get Started for Free</p>
 
-<p>amahero</p>
+    </div>
+
+    <div class="textbox2">
+         <p>Try It Free</p>   
+    </div>
+    
+    <div class="illustrationmodel">
+        <img src="huddlelanding page/illustration-mockups.svg" height="400";width="400">
+    </div>
+
+    <div class="text1">
+        <div class="image1">
+            <img src="huddlelanding page/illustration-grow-together.svg"height="300";width="300">
+        </div>
+        <div class="textintext1">
+            <h1 style="font-weight:bold">Grow Together</h1>
+            <div class="textintext11">
+            <p>Generate meaningful discussions with your audience audience audience and
+                <br>
+                build a strong, loyal community. Think of the insightful
+                <br>
+                coversations you miss ot on with feedback form.
+            </p>
+        </div>
+        </div>
+    </div>
+    
+    <div class="text2">
+        <div class="image2">
+            <img src="huddlelanding page/illustration-flowing-conversation.svg"height="300";width="300">
+        </div>
+        <div class="textintext2">
+            <h1 style="font-weight:bold">Flowing Conversations</h1>
+            <div class="textintext11">
+            <p>You would'nt paginate a coversation in real life, so why do
+                <br>
+                it online? Our threads have a just-in-time loading for a more
+                <br>
+                natural flow.
+            </p>
+        </div>
+        </div>
+    </div>
+    
+    <div class="text3">
+        <div class="image3">
+            <img src="huddlelanding page/illustration-your-users.svg"height="300";width="300">
+        </div>
+        <div class="textintext3">
+            <h1 style="font-weight:bold">Grow Together</h1>
+            <div class="textintext11">
+            <p>Generate meaningful discussions with your audience audience audience and
+                <br>
+                build a strong, loyal community. Think of the insightful
+                <br>
+                coversations you miss ot on with feedback form.
+            </p>
+        </div>
+        </div>
+    </div>
+
+    <div class="textbox3">
+        <p>Ready to Build Your Community?</p>
+    </div>
+    <div class="textbox4">
+        <p>Get Started For Free</p>
+
+    </div>
+    <div class="textbox5">
+        <p>aaaaaaaa</p>
+    </div>
+    
+    <div class="logo1">
+        <img src="huddlelanding page/logo.svg" >
+    </div>  
+
+    
+    </body>
+    </html>
 
 
 
 
 
-</body>
 
 
-
-
-
-
-
-
-
-</html>
